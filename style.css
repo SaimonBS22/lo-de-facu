@@ -1,0 +1,1015 @@
+ul{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes fadeIn{
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/*----INICIO DEL HEADER*/
+@media (min-width:1064px){
+/*----MENU----*/
+header{
+    background-image: url(./imagenes/header.jpg);
+    height: 175px;
+}
+.section-header{
+    display: flex;
+    justify-content: space-between;
+}
+.div-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo{
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.ul-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-right: 50px;
+}
+.a-header{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.a-header:hover{
+    font-size: larger;
+    text-decoration: underline;
+}
+
+/*----FIN DEL HEADER----*/
+
+
+/*----INICIO DEL MAIN----*/
+.h1-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+.section-main-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 5%;
+}
+.article-menu1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.div-menu1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div-menu1-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 2%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+    font-weight: bold;
+}
+.div-menu1-1 h2{
+    width: 500px;
+}
+.article-menu2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.div-menu2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div-menu2-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 2%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+    font-weight: bold;
+}
+.img-comidas{
+    height: 450px;
+    width: 450px;
+    border-radius: 75px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.h2-menu{
+    font-weight: bolder;
+}
+.h4-menu{
+    font-weight: bolder;
+    width:250px;
+}
+.a-menu{
+    color: white;
+    text-decoration: none;
+}
+.boton-menu{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    border-radius: 3px;
+    margin-top: 5%;
+    border: none;
+}
+.a-menu:hover{
+    font-size: larger;
+}
+#carrusel{
+    overflow: hidden;
+}
+
+
+/*----INICIO DEL FOOTER----*/
+.section-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div-footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.a-footer{
+    text-decoration: none;
+    color: black;
+}
+.a-footer:hover{
+    font-size: larger;
+}
+.div-footer3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+svg:hover{
+    height: 3rem;
+    width: 3rem;
+}
+
+
+/*----SUCURSALES----*/
+.section-sucursales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+.div-sucursales1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+.img-sucursales{
+    width: 245px;
+    height: 245px;
+    border-radius: 75px;
+}
+#div-sucursales1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+#div-sucursales2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+#div-sucursales3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.a-sucursales{
+    color: black;
+    text-decoration: none;
+}
+.a-sucursales:hover{
+    font-size: larger;
+}
+
+
+/*----RESEÑA----*/
+.section-reseña{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.div-reseña1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#form-reseña{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.div-input1{
+    width: 425px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.div-input2{
+    width: 425px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.div-input3{
+    width: 425px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.div-input4{
+    width: 425px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.label{
+   font-weight:500;
+}
+.input{
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.div-textarea{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+.boton{
+    width: 100px;
+    border: 1px solid black;
+}
+#textarea{
+    border: 1px black solid;
+    width: 400px;
+
+}
+.h4-reseña{
+    margin-bottom: 5%;
+}
+.h3-reseña{
+    width: 425px;
+    border-bottom: 1px solid grey;
+}
+.img-reseñas{
+    height: 500px;
+    width: 500px;
+}
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+@media (min-width:768px) and (max-width:1063px){
+
+    /*----MENU----*/
+header{
+    background-image: url(./imagenes/header.jpg);
+    height: 175px;
+}
+.section-header{
+    display: flex;
+    justify-content: space-between;
+}
+.div-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo{
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.ul-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-right: 50px;
+}
+.a-header{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px
+}
+.a-header:hover{
+    font-size: larger;
+    text-decoration: underline;
+}
+
+/*----FIN DEL HEADER----*/
+
+
+/*----INICIO DEL MAIN----*/
+.h1-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    font-size: larger;
+}
+.section-main-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5%;
+}
+.article-menu1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.div-menu1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div-menu1-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 2%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+    font-weight: bold;
+}
+.article-menu2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.div-menu2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div-menu2-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    margin-right: 2%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+    font-weight: bold;
+}
+.img-comidas{
+    height: 250px;
+    width: 250px;
+    border-radius: 75px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.h2-menu{
+    font-weight: bolder;
+    font-size: large;
+    width: 250px;
+}
+.h4-menu{
+    font-weight: bolder;
+    width:150px;
+    font-size: medium;
+}
+.a-menu{
+    color: white;
+    text-decoration: none;
+}
+.boton-menu{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    border-radius: 3px;
+    margin-top: 5%;
+    border: none;
+    width: 300px;
+    font-size: xx-small;
+}
+.boton-menu:hover{
+    font-size: larger;
+}
+
+
+/*----INICIO DEL FOOTER----*/
+.section-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div-footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.a-footer{
+    text-decoration: none;
+    color: black;
+}
+.a-footer:hover{
+    font-size: larger;
+}
+.div-footer3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+svg:hover{
+    height: 3rem;
+    width: 3rem;
+}
+
+
+/*----SUCURSALES----*/
+.section-sucursales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+.div-sucursales1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.img-sucursales{
+    width: 175px;
+    height: 175px;
+    border-radius: 50px;
+}
+#div-sucursales1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+#div-sucursales2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+#div-sucursales3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.a-sucursales{
+    color: black;
+    text-decoration: none;
+    font-size: small;
+}
+.a-sucursales:hover{
+    font-size: medium;
+}
+.h3-sucursales{
+    font-size: large;
+}
+
+
+/*----RESEÑA----*/
+.section-reseña{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.div-reseña1{
+    display: flex;
+    justify-content: space-around;
+    /*align-items: center;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#form-reseña{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.div-input1{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.div-input2{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.div-input3{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.div-input4{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.label{
+   font-weight:500;
+}
+.input{
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.div-textarea{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    width: 200px;
+}
+.boton{
+    width: 100px;
+    border: 1px solid black;
+}
+.textarea{
+    width: 200px;
+}
+.h4-reseña{
+    margin-bottom: 5%;
+    font-size: x-small;
+}
+.h3-reseña{
+    width: 250px;
+    border-bottom: 1px solid grey;
+}
+.img-reseñas{
+    height: 310px;
+    width: 310px;
+}
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+@media (max-width:767px){
+       /*----MENU----*/
+header{
+    background-image: url(./imagenes/header.jpg);
+    height: 175px;
+}
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.div-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo{
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.ul-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-right: 50px;
+}
+.a-header{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 10px
+}
+.a-header:hover{
+    font-size: larger;
+    text-decoration: underline;
+}
+
+/*----FIN DEL HEADER----*/
+
+
+/*----INICIO DEL MAIN----*/
+.h1-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    font-size: medium;
+}
+.section-main-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5%;
+}
+.article-menu1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.div-menu1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div-menu1-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 2%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+    font-weight: bold;
+}
+.article-menu2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.div-menu2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div-menu2-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 2%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+    font-weight: bold;
+}
+.img-comidas{
+    height: 150px;
+    width: 150px;
+    border-radius: 45px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.h2-menu{
+    font-weight: bolder;
+    font-size: medium;
+    width: 150px;
+}
+.h4-menu{
+    font-weight: bolder;
+    width:35px;
+    font-size: small;
+}
+.p-menu1{
+    font-size: x-small;
+}
+.a-menu{
+    color: white;
+    text-decoration: none;
+    font-size: xx-small;
+}
+.boton-menu{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    border-radius: 3px;
+    margin-top: 5%;
+    border: none;
+    width: 250px;
+}
+.boton-menu:hover{
+    font-size: larger;
+}
+
+
+/*----INICIO DEL FOOTER----*/
+.section-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div-footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.a-footer{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+.a-footer:hover{
+    font-size: medium;
+}
+.div-footer3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+svg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+svg:hover{
+    height: 2rem;
+    width: 2rem;
+}
+
+
+/*----SUCURSALES----*/
+.section-sucursales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+.div-sucursales1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.img-sucursales{
+    width: 175px;
+    height: 175px;
+    border-radius: 50px;
+}
+#div-sucursales1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+#div-sucursales2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+#div-sucursales3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.a-sucursales{
+    color: black;
+    text-decoration: none;
+    font-size: small;
+}
+.a-sucursales:hover{
+    font-size: medium;
+}
+.h3-sucursales{
+    font-size: large;
+}
+
+
+/*----RESEÑA----*/
+.section-reseña{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.div-reseña1{
+    display: flex;
+    justify-content: space-around;
+    /*align-items: center;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#form-reseña{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.div-input1{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.div-input2{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.div-input3{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.div-input4{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.label{
+   font-weight:500;
+}
+.input{
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.div-textarea{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    width: 200px;
+}
+.boton{
+    width: 100px;
+    border: 1px solid black;
+}
+.textarea{
+    width: 200px;
+}
+.h4-reseña{
+    margin-bottom: 5%;
+    font-size: x-small;
+}
+.h3-reseña{
+    width: 250px;
+    border-bottom: 1px solid grey;
+}
+.img-reseñas{
+    height: 310px;
+    width: 310px;
+}
+}
