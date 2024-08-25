@@ -931,7 +931,7 @@ svg:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-top: 15%;
     margin-bottom: 15%;
@@ -939,7 +939,7 @@ svg:hover{
 .div-reseña1{
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 #form-reseña{
@@ -950,7 +950,7 @@ svg:hover{
     gap: 0.5rem;
 }
 .div-input1{
-    width: 200px;
+    width: 45vw;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -958,7 +958,7 @@ svg:hover{
     gap: 5px;
 }
 .div-input2{
-    width: 200px;
+    width: 45vw;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -966,7 +966,7 @@ svg:hover{
     gap: 5px;
 }
 .div-input3{
-    width: 200px;
+    width: 45vw;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -974,7 +974,7 @@ svg:hover{
     gap: 5px;
 }
 .div-input4{
-    width: 200px;
+    width: 45vw;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -992,27 +992,27 @@ svg:hover{
     justify-content: flex-start;
     flex-direction: column;
     gap: 5px;
-    width: 200;
 }
-.boton{
-    width: 100px;
+.button{
+    width: 45vw;
     border: 1px solid black;
 }
 .textarea{
-    width: 200px;
+    width: 45vw;
     height:200px;
 }
 .h4-reseña{
     margin-bottom: 5%;
     font-size: xx-small;
-    width: 225px;
+    width: 75vw;
     font-weight: 700;
 }
 .h3-reseña{
-    width: 200;
+    width: 45vw;
     border-bottom: 1px solid grey;
 }
 .img-reseñas{
+    display: none;
     height: 200px;
     width: 200px;
     margin-top: 10%;
