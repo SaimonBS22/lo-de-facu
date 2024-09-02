@@ -5,41 +5,47 @@ svg[1].addEventListener('click', parrafo1);
 svg[2].addEventListener('click', parrafo2);
 
 
-function parrafo(){
+
+function parrafo() {
     let divVacio = document.querySelector('.icono');
+    let pExistente = divVacio.querySelector('p'); 
+
+    if (pExistente) {
+        divVacio.removeChild(pExistente);
+    } else {
+        
+        let p = document.createElement('p');
+        p.style.width = '200px';
+        p.style.fontWeight = 'bold';
 
 
-    if(!divVacio.querySelector('p')){
-    let p = document.createElement('p');
+        let span = document.createElement('span');
+        span.innerText = 'Lo de Facu';
+        span.style.color = 'red';
+        span.style.fontWeight = 'bold';
+        span.style.alignSelf = 'center';
+        span.style.textDecoration = 'underline';
 
-
-    let span = document.createElement('span');
-    span.innerText = 'Lo de Facu';
-    span.style.color = 'red';
-    span.style.fontWeight = 'bold';
-    span.style.alignSelf = 'center';
-    span.style.textDecoration = 'underline';
-
-    let textoRestante = document.createElement('p');
-    textoRestante.innerText = 'es un restaurante que ha ganado popularidad por ofrecer una experiencia culinaria auténtica y relajada en un ambiente acogedor hace mas de 15 años.'
-    textoRestante.style.width = '175px';
-    textoRestante.style.fontWeight = 'bold';
-    textoRestante.style.alignSelf = 'center';
-
-    
-    p.appendChild(span);
-    p.appendChild(textoRestante);
-    divVacio.appendChild(p);
-
+        let textoRestante = document.createTextNode(' es un restaurante que ha ganado popularidad por ofrecer una experiencia culinaria auténtica y relajada en un ambiente acogedor hace más de 15 años.');
+        
+        p.appendChild(span);
+        p.appendChild(textoRestante);
+        divVacio.appendChild(p);
     }
-};
+}
+
 
 function parrafo1(){
     let divVacio1 = document.querySelector('.icono1');
+    let pExistente1 = document.querySelector('p');
 
+    if(pExistente1){
+        divVacio1.removeChild(pExistente1);
+    }else{
 
-    if(!divVacio1.querySelector('p')){
     let p1= document.createElement('p');
+    p1.style.width = '200px';
+    p1.style.fontWeight = 'bold';
 
 
     let span1 = document.createElement('span');
@@ -49,26 +55,27 @@ function parrafo1(){
     span1.style.alignSelf = 'center';
     span1.style.textDecoration = 'underline';
 
-    let textoRestante1 = document.createElement('p');
-    textoRestante1.innerText = 'nos especializamos por nuestra variedad de platos y su abundancia, brindandoles a ustedes la oportunidad de disfrutar una buena comida.'
-    textoRestante1.style.width = '175px';
-    textoRestante1.style.fontWeight = 'bold';
-    textoRestante1.style.alignSelf = 'center';
+    let textoRestante1 = document.createTextNode(' se especializa por la variedad de platos y su abundancia, brindandoles a ustedes la oportunidad de disfrutar una buena comida.');
+
 
     
     p1.appendChild(span1);
     p1.appendChild(textoRestante1);
     divVacio1.appendChild(p1);
-
     }
-};
+    };
 
 function parrafo2(){
     let divVacio2 = document.querySelector('.icono2');
+    let pExistente2 = document.querySelector('p');
 
+    if(pExistente2){
+        divVacio2.removeChild(pExistente2)
+    }else{
 
-    if(!divVacio2.querySelector('p')){
     let p2= document.createElement('p');
+    p2.style.width = '200px';
+    p2.style.fontWeight = 'bold';
 
 
     let span2 = document.createElement('span');
@@ -78,11 +85,8 @@ function parrafo2(){
     span2.style.alignSelf = 'center';
     span2.style.textDecoration = 'underline';
 
-    let textoRestante2 = document.createElement('p');
-    textoRestante2.innerText = 'Nuestro servicio suele ser atento y agradable, para asi poder brindarles la mejor experiencia posible.'
-    textoRestante2.style.width = '175px';
-    textoRestante2.style.fontWeight = 'bold';
-    textoRestante2.style.alignSelf = 'center';
+    let textoRestante2 = document.createTextNode(' nuestro servicio suele ser atento y agradable, para asi poder brindarles la mejor experiencia posible.');
+   
 
     
     p2.appendChild(span2);
