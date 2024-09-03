@@ -17,6 +17,7 @@ function parrafo() {
         let p = document.createElement('p');
         p.style.width = '200px';
         p.style.fontWeight = 'bold';
+        p.classList = 'parrafoJS';
 
 
         let span = document.createElement('span');
@@ -37,7 +38,7 @@ function parrafo() {
 
 function parrafo1(){
     let divVacio1 = document.querySelector('.icono1');
-    let pExistente1 = document.querySelector('p');
+    let pExistente1 = divVacio1.querySelector('p');
 
     if(pExistente1){
         divVacio1.removeChild(pExistente1);
@@ -46,6 +47,7 @@ function parrafo1(){
     let p1= document.createElement('p');
     p1.style.width = '200px';
     p1.style.fontWeight = 'bold';
+    p1.classList = 'parrafoJS';
 
 
     let span1 = document.createElement('span');
@@ -67,7 +69,7 @@ function parrafo1(){
 
 function parrafo2(){
     let divVacio2 = document.querySelector('.icono2');
-    let pExistente2 = document.querySelector('p');
+    let pExistente2 = divVacio2.querySelector('p');
 
     if(pExistente2){
         divVacio2.removeChild(pExistente2)
@@ -76,6 +78,7 @@ function parrafo2(){
     let p2= document.createElement('p');
     p2.style.width = '200px';
     p2.style.fontWeight = 'bold';
+    p2.classList = 'parrafoJS';
 
 
     let span2 = document.createElement('span');
