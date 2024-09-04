@@ -15,17 +15,12 @@ function parrafo() {
     } else {
         
         let p = document.createElement('p');
-        p.style.width = '200px';
-        p.style.fontWeight = 'bold';
         p.classList = 'parrafoJS';
 
 
         let span = document.createElement('span');
         span.innerText = 'Lo de Facu';
-        span.style.color = 'red';
-        span.style.fontWeight = 'bold';
-        span.style.alignSelf = 'center';
-        span.style.textDecoration = 'underline';
+        span.classList = 'span';
 
         let textoRestante = document.createTextNode(' es un restaurante que ha ganado popularidad por ofrecer una experiencia culinaria auténtica y relajada en un ambiente acogedor hace más de 15 años.');
         
@@ -45,17 +40,13 @@ function parrafo1(){
     }else{
 
     let p1= document.createElement('p');
-    p1.style.width = '200px';
-    p1.style.fontWeight = 'bold';
     p1.classList = 'parrafoJS';
 
 
     let span1 = document.createElement('span');
     span1.innerText = 'Lo de Facu';
-    span1.style.color = 'red';
-    span1.style.fontWeight = 'bold';
-    span1.style.alignSelf = 'center';
-    span1.style.textDecoration = 'underline';
+    span1.classList = 'span';
+    
 
     let textoRestante1 = document.createTextNode(' se especializa por la variedad de platos y su abundancia, brindandoles a ustedes la oportunidad de disfrutar una buena comida.');
 
@@ -76,17 +67,12 @@ function parrafo2(){
     }else{
 
     let p2= document.createElement('p');
-    p2.style.width = '200px';
-    p2.style.fontWeight = 'bold';
     p2.classList = 'parrafoJS';
 
 
     let span2 = document.createElement('span');
     span2.innerText = 'Lo de Facu';
-    span2.style.color = 'red';
-    span2.style.fontWeight = 'bold';
-    span2.style.alignSelf = 'center';
-    span2.style.textDecoration = 'underline';
+    span2.classList = 'span';
 
     let textoRestante2 = document.createTextNode(' nuestro servicio suele ser atento y agradable, para asi poder brindarles la mejor experiencia posible.');
    
