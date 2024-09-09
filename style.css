@@ -102,14 +102,15 @@ header{
     flex-wrap: wrap;
     gap: 20px;
 }
- svg{
-    height: 20px;
-    width: 20px;
+.svg-icon{
+    height: 32px;
+    width: 32px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
-svg:hover{
-    height: 20px;
-    width: 20px;
-    transform: none;
+.svg-icon:hover{
+    width: 35px;
+    height: 35px;
 }
 .p-main{
     width: 350px;
@@ -121,10 +122,14 @@ svg:hover{
     height: 300px;
     border: 1px solid black;
     border-radius: 50px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .img-logo-main{
     width: 50px;
     height: 50px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .span{
     color: red;
@@ -134,7 +139,30 @@ svg:hover{
     width: 200px;
     font-weight: 600;
 }
-
+.h2-main{
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.boton-menu{
+    color: white;
+    text-decoration: none;
+    background-image:url(./imagenes/header.jpg);
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    border-radius: 3px;
+    margin-top: 10%;
+    border: none;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.a-menu{
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.boton-menu:hover{
+    background-color: rgb(33, 32, 32);
+}
 
 /*----INICIO DEL MAIN MENU----*/
 .h1-menu{
@@ -214,25 +242,6 @@ svg:hover{
     font-weight: bolder;
     width:250px;
 }
-.a-menu{
-    color: white;
-    text-decoration: none;
-}
-.boton-menu{
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    padding: 0.5rem 0.5rem 1rem 0.5rem;
-    border-radius: 3px;
-    margin-top: 5%;
-    border: none;
-}
-.a-menu:hover{
-    font-size: larger;
-}
-#carrusel{
-    overflow: hidden;
-}
 
 
 /*----INICIO DEL FOOTER----*/
@@ -261,9 +270,13 @@ svg:hover{
     align-items: center;
     gap: 1rem;
 }
-svg:hover{
-    height: 3rem;
+.svg-footer{
     width: 3rem;
+    height: 3rem;
+}
+.svg-footer:hover{
+    height: 3.2rem;
+    width: 3.2rem;
 }
 
 
@@ -334,13 +347,20 @@ svg:hover{
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 10%;
-    margin-bottom: 10%;
 }
 .div-reseña1{
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.div-reseña2{
+    display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 5%;
+    height: 650px;
 }
 #form-reseña{
     display: flex;
@@ -348,6 +368,9 @@ svg:hover{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 0.5rem;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+    margin-left: 10%;
 }
 .div-input1{
     width: 425px;
@@ -392,26 +415,36 @@ svg:hover{
     justify-content: flex-start;
     flex-direction: column;
     gap: 5px;
+
 }
 .boton{
     width: 100px;
     border: 1px solid black;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 #textarea{
     border: 1px black solid;
     width: 400px;
-
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .h4-reseña{
     margin-bottom: 5%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .h3-reseña{
     width: 425px;
     border-bottom: 1px solid grey;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .img-reseñas{
     height: 500px;
     width: 500px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 }
 
@@ -466,76 +499,103 @@ svg:hover{
  
  
  /*----INICIO MAIN INDEX----*/
- .section-main{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     flex-wrap: wrap;
-     margin-top: 5%;
-     margin-bottom: 7%;
-     gap: 25px;
- }
- .section-main1{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: row;
-     flex-wrap: wrap;
-     gap: 110px;
- }
- .div-main1{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: row;
-     flex-wrap: wrap;
-     gap: 5px;
- }
- .div-main2{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     flex-wrap: wrap;
-     gap: 20px;
- }
-  svg{
-     height: 17px;
-     width: 17px;
- }
- svg:hover{
-     height: 17px;
-     width: 17px;
-     transform: none;
- }
- .p-main{
-     width: 350px;
-     font-weight: bold;
-     text-align: center;
- }
- .img-main{
-     width: 175px;
-     height: 175px;
-     border: 1px solid black;
-     border-radius: 50px;
- }
- .img-logo-main{
-     width: 25px;
-     height: 25px;
- }
- .span{
-     color: red;
-     font-weight: 600;
- }
- .h2-main{
-    font-size:large;
- }
- .parrafoJS{
-    width: 175px;
+.section-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    gap: 50px;
+}
+.section-main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.div-main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.div-main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.svg-icon{
+    height: 28px;
+    width: 28px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.svg-icon:hover{
+    width: 35px;
+    height: 35px;
+}
+.p-main{
+    width: 350px;
+    font-weight: bold;
+    text-align: center;
+}
+.img-main{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.img-logo-main{
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.span{
+    color: red;
+    font-weight: 600;
+}
+.parrafoJS{
+    width: 200px;
     font-size: small;
     font-weight: 600;
- }
+}
+.h2-main{
+    font-size: large;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.boton-menu{
+    color: white;
+    text-decoration: none;
+    background-image:url(./imagenes/header.jpg);
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    border-radius: 3px;
+    margin-top: 10%;
+    border: none;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.a-menu{
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.boton-menu:hover{
+    background-color: rgb(33, 32, 32);
+}
  
  
  
@@ -664,7 +724,11 @@ svg:hover{
      align-items: center;
      gap: 1rem;
  }
- svg:hover{
+ .svg-footer{
+    width: 2.7rem;
+    height: 2.7rem;
+ }
+ .svg-footer:hover{
      height: 3rem;
      width: 3rem;
  }
@@ -744,12 +808,18 @@ svg:hover{
      margin-bottom: 10%;
  }
  .div-reseña1{
-     display: flex;
-     justify-content: space-around;
-     /*align-items: center;*/
-     flex-direction: row;
-     flex-wrap: wrap;
- }
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.div-reseña2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+}
  #form-reseña{
      display: flex;
      justify-content: flex-start;
@@ -895,7 +965,7 @@ header{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 150px;
+    gap: 80px;
 }
 .div-main1{
     display: flex;
@@ -913,14 +983,15 @@ header{
     flex-wrap: wrap;
     gap: 20px;
 }
- svg{
-    height: 20px;
-    width: 20px;
+.svg-icon{
+    height: 28px;
+    width: 28px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
-svg:hover{
-    height: 20px;
-    width: 20px;
-    transform: none;
+.svg-icon:hover{
+    width: 35px;
+    height: 35px;
 }
 .p-main{
     width: 350px;
@@ -928,27 +999,54 @@ svg:hover{
     text-align: center;
 }
 .img-main{
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
     border: 1px solid black;
     border-radius: 50px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .img-logo-main{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .span{
     color: red;
     font-weight: 600;
 }
 .parrafoJS{
-    width: 150px;
+    width: 200px;
     font-size: small;
     font-weight: 600;
 }
 .h2-main{
     font-size: small;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
+.boton-menu{
+    color: white;
+    text-decoration: none;
+    background-image:url(./imagenes/header.jpg);
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    border-radius: 3px;
+    margin-top: 10%;
+    border: none;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.a-menu{
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
+}
+.boton-menu:hover{
+    background-color: rgb(33, 32, 32);
+}
+ 
 
 
 
@@ -1232,8 +1330,8 @@ svg:hover{
     height:200px;
 }
 .h4-reseña{
-    margin-bottom: 5%;
-    font-size: xx-small;
+    margin-bottom: 15%;
+    font-size: medium;
     width: 75vw;
     font-weight: 700;
 }
