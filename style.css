@@ -163,6 +163,68 @@ header{
 .boton-menu:hover{
     background-color: rgb(33, 32, 32);
 }
+.section-main2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.div-main1-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.div-main2-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.img-valoraciones{
+    width: 80%;
+}
+.img-opiniones{
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    z-index: 0;
+    left: 25px;
+}
+.img-opiniones1{
+    position:absolute;
+    width: 375px;
+    height: 375px;
+    z-index: 1;
+    left: 50px;
+}
+.img-opiniones2{
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    z-index: 2;
+    left: 75px;
+}
+.img-opiniones3{
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    z-index: 3;
+    left: 100px;
+}
+
+
+
+
+
+
 
 /*----INICIO DEL MAIN MENU----*/
 .h1-menu{
