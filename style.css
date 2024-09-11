@@ -204,7 +204,7 @@ header{
     color: black;
     font-size: x-large;
     width: 200px;
-    right: 22%;
+    right: 22vw;
     z-index: 99;
 }
 .bi-arrow-left{
@@ -212,7 +212,7 @@ header{
     color: black;
     font-size: x-large;
     width: 200px;
-    left: 32%;
+    left: 33vw;
     z-index: 99;
 }
 .bi-arrow-right:hover{
