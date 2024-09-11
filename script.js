@@ -84,3 +84,44 @@ function parrafo2(){
 
     }
 };
+
+
+
+let flechaDerecha = document.querySelector('#flecha-derecha');
+let flechaIzquierda = document.querySelector('#flecha-izquierda');
+let imagenOpinion = document.querySelectorAll('.img-opiniones');
+let posicionActual = 0;
+
+flechaDerecha.addEventListener('click', pasarImagen);
+flechaIzquierda.addEventListener('click', retrocederImagen);
+
+function pasarImagen(){
+        imagenOpinion[posicionActual].style.display = 'none';
+        if(posicionActual >= imagenOpinion.length -1){
+            posicionActual = 0;
+        }else{
+            posicionActual++
+        }
+        renderizarImagen();
+}
+
+function retrocederImagen(){
+    imagenOpinion[posicionActual].style.display = 'none';
+    if(posicionActual <= 0){
+        posicionActual = imagenOpinion.length -1;
+    }else{
+        posicionActual--;
+    }
+    renderizarImagen();
+};
+
+function renderizarImagen(){
+    imagenOpinion[posicionActual].style.display = 'block';
+
+
+imagenOpinion.forEach(img => img.style.display = 'none'); 
+renderizarImagen(); 
+
+
+
+}

@@ -192,37 +192,17 @@ header{
     width: 80vw;
 }
 .img-opiniones{
-    position:absolute;
-    width: 375px;
-    height: 375px;
-    z-index: -1;
-
-}
-.img-opiniones1{
-    position:absolute;
-    width: 375px;
-    height: 375px;
-    z-index: 1;
-}
-.img-opiniones2{
     position: absolute;
     width: 375px;
     height: 375px;
-    z-index: 2;
+    
+
 }
-.img-opiniones3{
-    position:absolute;
-    width: 375px;
-    height: 375px;
-    z-index: 3;
-}
-.h2-main1{
-    z-index: 4;
-}
+
 .bi-arrow-right{
     position: absolute;
     color: black;
-    font-size: xx-large;
+    font-size: x-large;
     width: 200px;
     right: 22%;
     z-index: 99;
@@ -230,10 +210,16 @@ header{
 .bi-arrow-left{
     position: absolute;
     color: black;
-    font-size: xx-large;
+    font-size: x-large;
     width: 200px;
     left: 32%;
     z-index: 99;
+}
+.bi-arrow-right:hover{
+    font-size: xx-large;
+}
+.bi-arrow-left:hover{
+    font-size: xx-large;
 }
 
 
