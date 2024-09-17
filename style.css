@@ -171,6 +171,8 @@ header{
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .div-main1-1{
     position: relative;
@@ -180,6 +182,8 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .div-main2-2{
     display: flex;
@@ -188,6 +192,8 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 20%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .img-valoraciones{
     width: 80vw;
@@ -667,6 +673,8 @@ header{
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .div-main1-1{
     position: relative;
@@ -676,6 +684,8 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .div-main2-2{
     display: flex;
@@ -684,6 +694,8 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 20%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .img-valoraciones{
     width: 80vw;
@@ -1177,6 +1189,8 @@ header{
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .div-main1-1{
     position: relative;
@@ -1187,6 +1201,8 @@ header{
     align-items: center;
     margin-top: 10%;
     margin-bottom: 20%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .div-main2-2{
     display: flex;
@@ -1195,6 +1211,8 @@ header{
     justify-content: center;
     align-items: center;
     margin-top: 15%;
+    opacity: 0;
+    animation: fadeIn 3.5s forwards;
 }
 .img-valoraciones{
     width: 300px;
